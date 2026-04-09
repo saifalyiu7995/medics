@@ -63,6 +63,13 @@
 		<string>Montserrat-SemiBold.ttf</string>
 		<string>Montserrat-Black.ttf</string>
 		<string>Montserrat-Regular.ttf</string>
+		<string>Inter_24pt-SemiBold.ttf</string>
+		<string>Inter_18pt-Thin.ttf</string>
+		<string>Inter_18pt-Bold.ttf</string>
+		<string>Inter_18pt-Medium.ttf</string>
+		<string>Inter_24pt-Light.ttf</string>
+		<string>Inter_24pt-Bold.ttf</string>
+		<string>Inter_18pt-Regular.ttf</string>
 	</array>
 </dict>
 </plist>

@@ -12,6 +12,8 @@ import {
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
 import AuthScreen from './src/feature/auth/presentation/auth_screen';
+import OnboardingScreen1 from './src/feature/onboarding/presentation/onboarding_promo_steps_screen';
+import OnboardingLoginSignupScreen from './src/feature/onboarding/presentation/onboarding_login_signup_screen';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -29,7 +31,7 @@ function AppContent() {
 
   return (
     <View style={styles.container}>
-      <AuthScreen />
+      <OnboardingLoginSignupScreen />
     </View>
   );
 }
