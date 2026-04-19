@@ -14,6 +14,8 @@ import {
 import AuthScreen from './src/feature/auth/presentation/auth_screen';
 import OnboardingScreen1 from './src/feature/onboarding/presentation/onboarding_promo_steps_screen';
 import OnboardingLoginSignupScreen from './src/feature/onboarding/presentation/onboarding_login_signup_screen';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import RootNavigator from './src/core/navigator/root_navigator';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -30,8 +32,11 @@ function AppContent() {
   const safeAreaInsets = useSafeAreaInsets();
 
   return (
+    // <GestureHandlerRootView style={{ flex: 1 }}>
+    //   <RootNavigator />
+    // </GestureHandlerRootView>
     <View style={styles.container}>
-      <OnboardingLoginSignupScreen />
+      <AuthScreen />
     </View>
   );
 }

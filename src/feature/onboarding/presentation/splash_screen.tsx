@@ -1,8 +1,19 @@
-import { View, Text } from 'react-native';
+import { useEffect } from 'react';
+import { useNavigation } from '@react-navigation/native';
+import { Text, View } from 'react-native';
 import { images } from '../../../assets/images/index';
 
 export default function SplashScreen() {
     const LogoSvg = images.LogoSvg;
+    const navigation = useNavigation<any>();
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            navigation.replace('OnboardingStepScreen');
+        }, 3000);
+
+        return () => clearTimeout(timer);
+    }, []);
 
     return (
         <View

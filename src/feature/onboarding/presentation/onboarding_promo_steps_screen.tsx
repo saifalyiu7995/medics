@@ -3,13 +3,16 @@ import { images } from '../../../assets/images';
 import { OnboardingLayout } from './components/onboarding_ui';
 import { FlatList } from 'react-native';
 import { useRef } from 'react';
+import { useNavigation } from '@react-navigation/native';
 
 export default function OnboardingScreen1() {
     const flatListRef = useRef<FlatList<Slide> | null>(null);
+    const navigation = useNavigation<any>();
 
     const scrollToNext = (index: number) => {
         const nextIndex = index + 1;
         if (nextIndex >= slides.length) {
+            navigation.navigate('LoginSignupScreen');
             return;
         }
 
